@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+</head>
+<body>
+    <!-- script js colocado como atributo, não recomendado -->
+    <button onclick="alert('Abrindo janela pelo JS')">Clique aqui</button>
+
+    <button id="abreAlert">Abre Janela</button>
+
+    <!-- script js incorporado -->
+    <!-- O script é colocado antes do </body> para garantir que o HTML seja carregado antes da execução do JavaScript, evitando erros de elementos não encontrados. -->
+    <script>
+        const btAbreAlert = document.querySelector("#abreAlert")
+        
+        btAbreAlert.addEventListener("click", () => {
+            alert("Abrindo janela pelo script incorporado")
+        })
+    </script>
+</body>
+</html>
