@@ -10,6 +10,6 @@ export const SecondText = () => {
 // É possível criar mais de um componente num mesmo arquivo
 export const ThirdText = () => {
     return (
-        <h3>O meu terceiro texto</h3>
+        <h3>Meu terceiro texto</h3>
     )
 }
