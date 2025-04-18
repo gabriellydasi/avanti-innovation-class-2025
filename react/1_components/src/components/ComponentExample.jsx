@@ -1,4 +1,13 @@
-/* ATALHOS */
+/* Atalhos da extensão 'ES7+ React/Redux/React-Native snippets' */
+
+// rfc 
+import React from 'react'
+
+export default function ComponentExample() {
+  return (
+    <div>ComponentExample</div>
+  )
+}
 
 // rfce
 import React from 'react'
@@ -11,7 +20,7 @@ const ComponentExample = () => {
 
 export default ComponentExample
 
-// raf
+// rafc
 import React from 'react'
 
 export const ComponentExample = () => {
@@ -19,3 +28,14 @@ export const ComponentExample = () => {
     <div>ComponentExample</div>
   )
 }
+
+// rafce 
+import React from 'react'
+
+const ComponentExample = () => {
+  return (
+    <div>ComponentExample</div>
+  )
+}
+
+export default ComponentExample
