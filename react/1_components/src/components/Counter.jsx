@@ -11,6 +11,8 @@ const Counter = () => {
     useEffect(() => {
         document.title = `Contador: ${counter}`
         // Altera o title do documento 
+        
+        console.log("Executou")
     }, [counter]) // Array de dependências
         // Toda vez que o counter alterar, vai atualizar o 'document.title'
 

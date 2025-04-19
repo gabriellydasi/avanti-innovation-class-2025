@@ -7,12 +7,19 @@ import Events from './components/Events'
 import MyCSSComponent from './components/MyCSSComponent/MyCSSComponent'
 import Counter from './components/Counter'
 import ProductQuantity from './components/ProductQuantity'
+import GithubUser from './components/GithubUser'
 
 function App() {
 
 
   return (
     <>
+      {/* Github User  */}
+      <section>
+        <h2>Usuário do Github</h2>
+        <GithubUser />
+      </section>
+
       {/* Controle de quantidade de produto  */}
       <section>
         <h2>Controle de Quantidade do Produto</h2>
