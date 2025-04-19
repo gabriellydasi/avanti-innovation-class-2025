@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Counter = () => {
     // useState é um hook do React, ou seja, uma função especial que permite adicionar
@@ -7,6 +7,12 @@ const Counter = () => {
     // Aqui foi criado um estado chamado 'counter', com valor inicial 0
     // A função 'setCounter' é usada pra atualizar esse valor
     const [counter, setCounter] = useState(0)
+
+    useEffect(() => {
+        document.title = `Contador: ${counter}`
+        // Altera o title do documento 
+    }, [counter]) // Array de dependências
+        // Toda vez que o counter alterar, vai atualizar o 'document.title'
 
     // Função pra incrementar o contador em 1
     const increment = () => {
