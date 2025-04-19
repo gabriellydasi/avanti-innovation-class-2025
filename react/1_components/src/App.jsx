@@ -6,12 +6,18 @@ import { SecondText, ThirdText } from './components/OtherComponents'
 import Events from './components/Events'
 import MyCSSComponent from './components/MyCSSComponent/MyCSSComponent'
 import Counter from './components/Counter'
+import ProductQuantity from './components/ProductQuantity'
 
 function App() {
 
 
   return (
     <>
+      <section>
+        <h2>Controle de Quantidade do Produto</h2>
+        <ProductQuantity />
+      </section>
+
       <section style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
         <h1>Contador</h1>
         <Counter />
