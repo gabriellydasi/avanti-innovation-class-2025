@@ -4,8 +4,16 @@ import styles from './TodoList.module.css'
 
 const TodoList = () => {
     const [task, setTask] = useState("")
-    // testando
-    console.log("task: ", task)
+    const [tasks, setTasks] = useState([])
+
+    const addTask = () => {
+        if (task.trim() === "") return
+
+        setTasks([...tasks, task]) // Prezerva as tasks existentes e adiciona a nova task
+        setTask("") // Limpa o campo de formulário
+    }
+
+    console.log("tasks", tasks)
 
     return (
         <div className={styles.container}>
@@ -18,7 +26,7 @@ const TodoList = () => {
                     value={task}
                     onChange={(e) => setTask(e.target.value)}
                 />
-                <button className={styles.button}>Adicionar</button>
+                <button className={styles.button} onClick={addTask}>Adicionar</button>
             </div>
             <ul className={styles.taskList}>
                 <li className={styles.taskItem}>Tarefa</li>
