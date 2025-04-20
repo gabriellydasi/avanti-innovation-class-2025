@@ -1,0 +1,76 @@
+/* Container Principal */
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título da Lista */
+.title {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+/* Input e Botão dentro do formulário */
+.inputContainer {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    background: #ffffff;
+    color: #333333;
+}
+
+.input:focus {
+    border-color: #0056b3;
+}
+
+/* Botão */
+.button {
+    background: #007bff;
+    color: #ffffff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background: #0056b3;;
+}
+
+/* Lista de Tarefas */
+.taskList {
+    list-style: none;
+    padding: 0;
+}
+
+.taskItem {
+    background: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    color: #333333;
+    text-align: left;
+}
+
+.taskItem:hover {
+    background: #e9ecef;
+}
