@@ -40,3 +40,51 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Change Theme Container */
+.app {
+  padding: 40px;
+  border-radius: 8px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Light Theme */
+.light {
+  background: #ffffff;
+  color: #868686;
+}
+
+.light button {
+  background: #868686;
+  transition: background 0.3s ease;
+}
+
+.light button:focus {
+  outline: none;
+}
+
+.light button:hover {
+  background: #6e6e6e;
+  border: none;
+}
+
+/* Dark Theme */
+.dark {
+  background: #181818;
+  color: #ffffff;
+}
+
+.dark button {
+  background: #232323;
+  transition: background 0.3s ease;
+}
+
+.dark button:focus {
+  outline: none;
+}
+
+.dark button:hover {
+  background: #2323236b;
+  border: none;
+}
