@@ -1,0 +1,60 @@
+.accordion {
+    width: 500px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.item {
+    border-bottom: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.button {
+    width: 100%;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333333;
+}
+
+.button:focus {
+    outline: none;
+    border-left: 4px solid #000000;
+}
+
+.button:hover {
+    border-left: 4px solid #000000;
+}
+
+.answer {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #444444;
+    text-align: justify;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.item.open .answer {
+    opacity: 1;
+    height: auto;
+    padding: 15px;
+}
