@@ -8,7 +8,7 @@ const Cart = () => {
         <div>
             <h2>Carrinho</h2>
             {cart.length === 0 ? 
-            (<p>Seu carringo está vazio</p>) 
+            (<p>Seu carrinho está vazio</p>) 
             :
             (cart.map(item => (
                 <div key={item.id}>
