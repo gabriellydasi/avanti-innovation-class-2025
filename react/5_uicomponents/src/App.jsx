@@ -1,5 +1,6 @@
 import './App.css'
 import Clock from './components/Clock/Clock'
+import ContactForm from './components/ContactForm/ContactForm'
 import Modal from './components/Modal/Modal'
 
 function App() {
@@ -11,6 +12,10 @@ function App() {
 
       <h2>Modal</h2>
       <Modal/>
+      <hr />
+
+      <h2>Formulário de Contato</h2>
+      <ContactForm/>
     </>
   )
 }
