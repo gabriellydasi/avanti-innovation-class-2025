@@ -11,11 +11,11 @@ const Modal = () => {
         {isOpen && (
             <div className={styles.modal}>
                 <div className={styles.modalContent}>
-                    <h2>Título do modal</h2>
-                    <p>Conteúdo do modal</p>
-                    <button onClick={() => setIsOpen(false)} className={styles.closeButton}>
+                <button onClick={() => setIsOpen(false)} className={styles.closeButton}>
                         X
                     </button>
+                    <h2>Título do modal</h2>
+                    <p>Conteúdo do modal</p>
                 </div>
             </div>
         )}
